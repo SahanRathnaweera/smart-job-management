@@ -27,6 +27,7 @@ public class Application {
     @JoinColumn(name = "job_id", nullable = false)
     private Job job;
 
+    @Builder.Default
     @Enumerated(EnumType.STRING)
     private ApplicationStatus status = ApplicationStatus.PENDING;
 
